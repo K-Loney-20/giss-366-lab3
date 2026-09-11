@@ -8,29 +8,30 @@
         <link rel="stylesheet" href="css/leaflet.css">
         <script src="js/leaflet.js"></script>
         <style>
+            .note {color:darkblue}
             body {
                 margin: 0;
                 padding: 0;
                 background-color: "whitesmoke";
-                font-family: "Noto Sans", sans-serif;
+                font-family: "Ariel", sans-serif;
                 color: #3d3d3d;
             }
             #title {
                 position: fixed;
                 margin-top: 0;
                 top: 10px;
-                left: 55px;
+                left: 50px;
                 font-size: 2em;
-                font-family: "Lora", serif;
+                font-family: "Ariel", serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: rgba(255, 255, 255, 0.5);
+                background-color: rgba(0, 180, 240, 0.75);
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
             }
             #description h2 {
-                font-family: "Lora", serif;
+                font-family: "Ariel", serif;
                 letter-spacing: .04em;
             }
             #map {
@@ -41,11 +42,11 @@
             }
             #description {
                 position: fixed;
-                bottom: 20px;
-                left: 10px;
+                top: 10px;
+                right: 50px;
                 width: 280px;
                 padding: 0px 15px;
-                background-color: rgba(255, 255, 255, 0.7);
+                background-color: rgba(240, 240, 160, 0.7);
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
@@ -64,15 +65,20 @@
         </style>
     </head>
     <body>
-        <h1 id="title">[update this] Leaflet Quick Start Guide</h1>
+        <h1 id="title">Lab 3 - Kevin Loney</h1>
         <div id="map"></div>
-        <div id="description">
-            <h2>About this map</h2>
-            <p>This is the final result of the <a href="https://leafletjs.com/examples/quick-start/" target="_blank">Leaflet Quick Start Guide</a>. 
-                The map demonstrates Leaflet basics, such as setting up a Leaflet map, adding markers, polylines and popups.</p>
-            <p>The placement and styling of the title and description boxes is done using CSS. 
-                Check out the source code of this page to see how.</p>
-            <p>Map authored by: [insert your name here]</p>
+        <div id="description", class="note">
+            <h2>About this lab</h2>
+            <p>This is the part of the lab in which the description text has been changed.
+               Although I admittedly do not have much ideas for the final project so far,
+               I hope to figure that out soon.
+            </p>
+            <p>States I have been to recently:
+            <ul>- Texas</ul>
+            <ul>- Iowa</ul>
+            <ul>- Colorado</ul>
+            </p>
+            <p>Map authored by: Kevin Loney</p>
         </div>
         <script src="map.js"></script>
     </body>
